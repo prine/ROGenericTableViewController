@@ -46,8 +46,8 @@ class NavigationViewController: UINavigationController {
         })
 
         // Generic CustomTableViewCell solution
-        var tableViewController = createViewControllerGeneric([user1, user2], cellForRow, didCellSelect, storyboardName:"Main", tableViewControllerIdentifier:"TableViewControllerScene") as! ROGenericTableViewController
-        
+        var tableViewController = createViewControllerGeneric([user1, user2], cellForRow, didCellSelect, "Main", "TableViewControllerScene") as! ROGenericTableViewController
+    
         // If you need swipe actions just set the swipe actions variable
         tableViewController.swipeActions = createSwipeActions()
     
