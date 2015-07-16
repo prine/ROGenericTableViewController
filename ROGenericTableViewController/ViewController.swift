@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  ROGenericTableViewController
 //
-//  Created by Robin Oster on 16/07/15.
-//  Copyright (c) 2015 Rascor International AG. All rights reserved.
+//  Created by Robin Oster on 23/04/15.
+//  Copyright (c) 2015 Prine. All rights reserved.
 //
 
 import UIKit

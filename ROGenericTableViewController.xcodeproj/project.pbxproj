@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CB929BA71B57DDF900962DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BA61B57DDF900962DEA /* AppDelegate.swift */; };
-		CB929BA91B57DDF900962DEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BA81B57DDF900962DEA /* ViewController.swift */; };
-		CB929BAC1B57DDF900962DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB929BAA1B57DDF900962DEA /* Main.storyboard */; };
 		CB929BAE1B57DDF900962DEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB929BAD1B57DDF900962DEA /* Images.xcassets */; };
-		CB929BB11B57DDF900962DEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB929BAF1B57DDF900962DEA /* LaunchScreen.xib */; };
 		CB929BBD1B57DDF900962DEA /* ROGenericTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BBC1B57DDF900962DEA /* ROGenericTableViewControllerTests.swift */; };
+		CB929BC81B57DE8500962DEA /* ROGenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BC71B57DE8500962DEA /* ROGenericTableViewController.swift */; };
+		CB929BCC1B57DE8F00962DEA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CB929BC91B57DE8F00962DEA /* LICENSE */; };
+		CB929BCD1B57DE8F00962DEA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB929BCA1B57DE8F00962DEA /* README.md */; };
+		CB929BCE1B57DE8F00962DEA /* ROGenericTableViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB929BCB1B57DE8F00962DEA /* ROGenericTableViewController.podspec */; };
+		CB929BD51B57E07A00962DEA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BCF1B57E07A00962DEA /* CustomTableViewCell.swift */; };
+		CB929BD61B57E07A00962DEA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BD01B57E07A00962DEA /* DetailViewController.swift */; };
+		CB929BD71B57E07A00962DEA /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BD11B57E07A00962DEA /* NavigationViewController.swift */; };
+		CB929BD81B57E07A00962DEA /* NavigationViewControllerSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BD21B57E07A00962DEA /* NavigationViewControllerSimple.swift */; };
+		CB929BDA1B57E07A00962DEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BD41B57E07A00962DEA /* ViewController.swift */; };
+		CB929BDF1B57E08500962DEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB929BDB1B57E08500962DEA /* LaunchScreen.xib */; };
+		CB929BE01B57E08500962DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB929BDD1B57E08500962DEA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +37,21 @@
 		CB929BA11B57DDF900962DEA /* ROGenericTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROGenericTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB929BA51B57DDF900962DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB929BA61B57DDF900962DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB929BA81B57DDF900962DEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB929BAB1B57DDF900962DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB929BAD1B57DDF900962DEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CB929BB01B57DDF900962DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CB929BB61B57DDF900962DEA /* ROGenericTableViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROGenericTableViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB929BBB1B57DDF900962DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB929BBC1B57DDF900962DEA /* ROGenericTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROGenericTableViewControllerTests.swift; sourceTree = "<group>"; };
+		CB929BC71B57DE8500962DEA /* ROGenericTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROGenericTableViewController.swift; path = Source/ROGenericTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		CB929BC91B57DE8F00962DEA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CB929BCA1B57DE8F00962DEA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CB929BCB1B57DE8F00962DEA /* ROGenericTableViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ROGenericTableViewController.podspec; sourceTree = "<group>"; };
+		CB929BCF1B57E07A00962DEA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		CB929BD01B57E07A00962DEA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CB929BD11B57E07A00962DEA /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		CB929BD21B57E07A00962DEA /* NavigationViewControllerSimple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerSimple.swift; sourceTree = "<group>"; };
+		CB929BD41B57E07A00962DEA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB929BDC1B57E08500962DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CB929BDE1B57E08500962DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,9 @@
 		CB929B981B57DDF900962DEA = {
 			isa = PBXGroup;
 			children = (
+				CB929BC91B57DE8F00962DEA /* LICENSE */,
+				CB929BCA1B57DE8F00962DEA /* README.md */,
+				CB929BCB1B57DE8F00962DEA /* ROGenericTableViewController.podspec */,
 				CB929BA31B57DDF900962DEA /* ROGenericTableViewController */,
 				CB929BB91B57DDF900962DEA /* ROGenericTableViewControllerTests */,
 				CB929BA21B57DDF900962DEA /* Products */,
@@ -78,10 +97,15 @@
 			isa = PBXGroup;
 			children = (
 				CB929BA61B57DDF900962DEA /* AppDelegate.swift */,
-				CB929BA81B57DDF900962DEA /* ViewController.swift */,
-				CB929BAA1B57DDF900962DEA /* Main.storyboard */,
 				CB929BAD1B57DDF900962DEA /* Images.xcassets */,
-				CB929BAF1B57DDF900962DEA /* LaunchScreen.xib */,
+				CB929BCF1B57E07A00962DEA /* CustomTableViewCell.swift */,
+				CB929BD01B57E07A00962DEA /* DetailViewController.swift */,
+				CB929BD11B57E07A00962DEA /* NavigationViewController.swift */,
+				CB929BD21B57E07A00962DEA /* NavigationViewControllerSimple.swift */,
+				CB929BD41B57E07A00962DEA /* ViewController.swift */,
+				CB929BDB1B57E08500962DEA /* LaunchScreen.xib */,
+				CB929BDD1B57E08500962DEA /* Main.storyboard */,
+				CB929BC61B57DE7900962DEA /* Source */,
 				CB929BA41B57DDF900962DEA /* Supporting Files */,
 			);
 			path = ROGenericTableViewController;
@@ -110,6 +134,14 @@
 				CB929BBB1B57DDF900962DEA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB929BC61B57DE7900962DEA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CB929BC71B57DE8500962DEA /* ROGenericTableViewController.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +224,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB929BAC1B57DDF900962DEA /* Main.storyboard in Resources */,
-				CB929BB11B57DDF900962DEA /* LaunchScreen.xib in Resources */,
+				CB929BDF1B57E08500962DEA /* LaunchScreen.xib in Resources */,
+				CB929BE01B57E08500962DEA /* Main.storyboard in Resources */,
+				CB929BCE1B57DE8F00962DEA /* ROGenericTableViewController.podspec in Resources */,
+				CB929BCC1B57DE8F00962DEA /* LICENSE in Resources */,
 				CB929BAE1B57DDF900962DEA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +246,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB929BA91B57DDF900962DEA /* ViewController.swift in Sources */,
+				CB929BD81B57E07A00962DEA /* NavigationViewControllerSimple.swift in Sources */,
+				CB929BD71B57E07A00962DEA /* NavigationViewController.swift in Sources */,
+				CB929BDA1B57E07A00962DEA /* ViewController.swift in Sources */,
 				CB929BA71B57DDF900962DEA /* AppDelegate.swift in Sources */,
+				CB929BCD1B57DE8F00962DEA /* README.md in Sources */,
+				CB929BD61B57E07A00962DEA /* DetailViewController.swift in Sources */,
+				CB929BD51B57E07A00962DEA /* CustomTableViewCell.swift in Sources */,
+				CB929BC81B57DE8500962DEA /* ROGenericTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,20 +276,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CB929BAA1B57DDF900962DEA /* Main.storyboard */ = {
+		CB929BDB1B57E08500962DEA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB929BAB1B57DDF900962DEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CB929BAF1B57DDF900962DEA /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB929BB01B57DDF900962DEA /* Base */,
+				CB929BDC1B57E08500962DEA /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CB929BDD1B57E08500962DEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB929BDE1B57E08500962DEA /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
