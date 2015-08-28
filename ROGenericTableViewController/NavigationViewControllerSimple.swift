@@ -24,12 +24,12 @@ class NavigationViewControllerSimple: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var glencore = Company("Glencore", 10000)
-        var nestle = Company("Nestle", 80011)
+        let glencore = Company("Glencore", 10000)
+        let nestle = Company("Nestle", 80011)
         
-        var cellForRow = ({ (tableView:UITableView, company:Company) -> UITableViewCell in
+        let cellForRow = ({ (tableView:UITableView, company:Company) -> UITableViewCell in
             // CellForRowAtIndexPath
-            var customCell:UITableViewCell? = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell?
+            var customCell:UITableViewCell? = tableView.dequeueReusableCellWithIdentifier("Cell") 
             
             if customCell == nil {
                 customCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell") as UITableViewCell
@@ -41,12 +41,12 @@ class NavigationViewControllerSimple: UINavigationController {
             return customCell!
         })
         
-        var didCellSelect = ({(company:Company) -> () in
-            println("Company: \(company.name) got selected")
+        let didCellSelect = ({(company:Company) -> () in
+            print("Company: \(company.name) got selected")
         })
         
         // Generic CustomTableViewCell solution
-        var tableViewController = createViewControllerGeneric([nestle, glencore], cellForRow, didCellSelect) as! ROGenericTableViewController
+        let tableViewController = createViewControllerGeneric([nestle, glencore], cellForRow: cellForRow, select: didCellSelect) as! ROGenericTableViewController
         
         tableViewController.swipeActions = createSwipeActions()
         
@@ -54,8 +54,8 @@ class NavigationViewControllerSimple: UINavigationController {
     }
     
     func createSwipeActions() -> [UITableViewRowAction] {
-        var favAction = UITableViewRowAction(style: .Normal, title: "Fire all employees") { (action, indexPath) -> Void in
-            println("Fire everyone from the company")
+        let favAction = UITableViewRowAction(style: .Normal, title: "Fire all employees") { (action, indexPath) -> Void in
+            print("Fire everyone from the company")
         }
         
         favAction.backgroundColor = UIColor.brownColor()

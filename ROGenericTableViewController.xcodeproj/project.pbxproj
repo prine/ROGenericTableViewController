@@ -12,7 +12,6 @@
 		CB929BBD1B57DDF900962DEA /* ROGenericTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BBC1B57DDF900962DEA /* ROGenericTableViewControllerTests.swift */; };
 		CB929BC81B57DE8500962DEA /* ROGenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BC71B57DE8500962DEA /* ROGenericTableViewController.swift */; };
 		CB929BCC1B57DE8F00962DEA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CB929BC91B57DE8F00962DEA /* LICENSE */; };
-		CB929BCD1B57DE8F00962DEA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB929BCA1B57DE8F00962DEA /* README.md */; };
 		CB929BCE1B57DE8F00962DEA /* ROGenericTableViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB929BCB1B57DE8F00962DEA /* ROGenericTableViewController.podspec */; };
 		CB929BD51B57E07A00962DEA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BCF1B57E07A00962DEA /* CustomTableViewCell.swift */; };
 		CB929BD61B57E07A00962DEA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929BD01B57E07A00962DEA /* DetailViewController.swift */; };
@@ -188,6 +187,8 @@
 		CB929B991B57DDF900962DEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Rascor International AG";
 				TargetAttributes = {
@@ -250,7 +251,6 @@
 				CB929BD71B57E07A00962DEA /* NavigationViewController.swift in Sources */,
 				CB929BDA1B57E07A00962DEA /* ViewController.swift in Sources */,
 				CB929BA71B57DDF900962DEA /* AppDelegate.swift in Sources */,
-				CB929BCD1B57DE8F00962DEA /* README.md in Sources */,
 				CB929BD61B57E07A00962DEA /* DetailViewController.swift in Sources */,
 				CB929BD51B57E07A00962DEA /* CustomTableViewCell.swift in Sources */,
 				CB929BC81B57DE8500962DEA /* ROGenericTableViewController.swift in Sources */,
@@ -451,6 +451,7 @@
 				CB929BC21B57DDF900962DEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB929BC31B57DDF900962DEA /* Build configuration list for PBXNativeTarget "ROGenericTableViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +460,7 @@
 				CB929BC51B57DDF900962DEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

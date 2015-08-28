@@ -24,10 +24,10 @@ class NavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var user1 = User("Hugo", "Walker")
-        var user2 = User("Texas", "Ranger")
+        let user1 = User("Hugo", "Walker")
+        let user2 = User("Texas", "Ranger")
         
-        var cellForRow = ({ (tableView:UITableView, user:User) -> UITableViewCell in
+        let cellForRow = ({ (tableView:UITableView, user:User) -> UITableViewCell in
             // CellForRowAtIndexPath
             var customCell:CustomTableViewCell? = tableView.dequeueReusableCellWithIdentifier("CustomCell") as! CustomTableViewCell?
             
@@ -40,27 +40,27 @@ class NavigationViewController: UINavigationController {
             return customCell!
         })
         
-        var didCellSelect = ({(user:User) -> () in
+        let didCellSelect = ({(user:User) -> () in
             let detailViewController = self.storyboardLoad("DetailViewControllerScene") as DetailViewController
             self.pushViewController(detailViewController, animated: true)
         })
 
         // Generic CustomTableViewCell solution
-        var tableViewController = createViewControllerGeneric([user1, user2], cellForRow, didCellSelect, "Main", "TableViewControllerScene") as! ROGenericTableViewController
+        let tableViewController = createViewControllerGeneric([user1, user2], cellForRow: cellForRow, select: didCellSelect, storyboardName: "Main", tableViewControllerIdentifier: "TableViewControllerScene") as! ROGenericTableViewController
     
         // If you need swipe actions just set the swipe actions variable
         tableViewController.swipeActions = createSwipeActions()
     
         // Update later on the data (need to use the generic outside method)
-        updateItems(tableViewController, [user1, user2, user1, user2])
+        updateItems(tableViewController, items: [user1, user2, user1, user2])
         tableViewController.tableView.reloadData()
         
         self.viewControllers = [tableViewController]
     }
     
     func createSwipeActions() -> [UITableViewRowAction] {
-        var favAction = UITableViewRowAction(style: .Normal, title: "Swipe 1") { (action, indexPath) -> Void in
-            println("Swipe 1")
+        let favAction = UITableViewRowAction(style: .Normal, title: "Swipe 1") { (action, indexPath) -> Void in
+            print("Swipe 1")
         }
         
         favAction.backgroundColor = UIColor.brownColor()

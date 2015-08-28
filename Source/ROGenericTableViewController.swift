@@ -46,7 +46,7 @@ public class ROGenericTableViewController : UITableViewController {
         didSelect(items[indexPath.row])
     }
     
-    override public func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
+    override public func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         return self.swipeActions
     }
     
@@ -58,17 +58,17 @@ public class ROGenericTableViewController : UITableViewController {
 public func createViewControllerGeneric<A>(items: [A], cellForRow: (UITableView, A) -> UITableViewCell?, select:(A) -> (), storyboardName:String, tableViewControllerIdentifier:String) -> UITableViewController {
     
     // Load the Custom table view cell from a storyboard
-    var storyboard = UIStoryboard(name: storyboardName, bundle: nil)
-    var vc:ROGenericTableViewController = storyboard.instantiateViewControllerWithIdentifier(tableViewControllerIdentifier) as! ROGenericTableViewController
+    let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+    let vc:ROGenericTableViewController = storyboard.instantiateViewControllerWithIdentifier(tableViewControllerIdentifier) as! ROGenericTableViewController
     
-    return unbox(vc, items, cellForRow, select)
+    return unbox(vc, items: items, cellForRow: cellForRow, didSelect: select)
 }
 
 public func createViewControllerGeneric<A>(items: [A], cellForRow: (UITableView, A) -> UITableViewCell?, select:(A) -> ()) -> UITableViewController {
     // There was no storyboard or tableviewcontroller identifier given so create the ROTableViewControllerGeneric
-    var vc:ROGenericTableViewController = ROGenericTableViewController(style: UITableViewStyle.Plain)
+    let vc:ROGenericTableViewController = ROGenericTableViewController(style: UITableViewStyle.Plain)
     
-    return unbox(vc, items, cellForRow, select)
+    return unbox(vc, items: items, cellForRow: cellForRow, didSelect: select)
 }
 
 func unbox<A>(vc:ROGenericTableViewController, items:[A], cellForRow: (UITableView, A) -> UITableViewCell?, didSelect:(A) -> ()) -> ROGenericTableViewController {

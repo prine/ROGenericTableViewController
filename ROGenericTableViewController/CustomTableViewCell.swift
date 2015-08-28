@@ -16,7 +16,7 @@ class CustomTableViewCell : UITableViewCell {
     @IBOutlet var lastname:UILabel!
     @IBOutlet var test:UILabel!
     
-    required init(coder: NSCoder) {
+    required init?(coder: NSCoder) {
         super.init(coder:coder)
     }
     
@@ -34,6 +34,6 @@ class CustomTableViewCell : UITableViewCell {
         self.firstname?.text = user.firstname
         self.lastname?.text = user.lastname
         
-        println("Received user: " + user.firstname + " ~ " + user.lastname)
+        print("Received user: " + user.firstname + " ~ " + user.lastname)
     }
 }
