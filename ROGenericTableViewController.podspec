@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "ROGenericTableViewController"
-s.version          = "2.0.0"
+s.version          = "2.0.1"
 s.summary          = "A generic TableViewController class which is able to deal with custom created objects very easily"
 s.description      = <<-DESC
 A generic TableViewController class which is able to deal with custom created objects very easily. It offers a generic TableViewController class.
