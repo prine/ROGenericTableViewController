@@ -29,10 +29,10 @@ class NavigationViewController: UINavigationController {
         
         let cellForRow = ({ (tableView:UITableView, user:User) -> UITableViewCell in
             // CellForRowAtIndexPath
-            var customCell:CustomTableViewCell? = tableView.dequeueReusableCellWithIdentifier("CustomCell") as! CustomTableViewCell?
+            var customCell:CustomTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell?
             
             if customCell == nil {
-                customCell = CustomTableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "CustomCell") as CustomTableViewCell
+                customCell = CustomTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "CustomCell") as CustomTableViewCell
             }
             
             customCell!.setUser(user)
@@ -59,17 +59,17 @@ class NavigationViewController: UINavigationController {
     }
     
     func createSwipeActions() -> [UITableViewRowAction] {
-        let favAction = UITableViewRowAction(style: .Normal, title: "Swipe 1") { (action, indexPath) -> Void in
+        let favAction = UITableViewRowAction(style: .normal, title: "Swipe 1") { (action, indexPath) -> Void in
             print("Swipe 1")
         }
         
-        favAction.backgroundColor = UIColor.brownColor()
+        favAction.backgroundColor = UIColor.brown
         
         return [favAction]
     }
     
-    func storyboardLoad<T>(sceneName:String) -> T {
-        return self.storyboard?.instantiateViewControllerWithIdentifier(sceneName) as! T
+    func storyboardLoad<T>(_ sceneName:String) -> T {
+        return self.storyboard?.instantiateViewController(withIdentifier: sceneName) as! T
     }
 
     override func didReceiveMemoryWarning() {

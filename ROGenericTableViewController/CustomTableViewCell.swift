@@ -10,7 +10,7 @@ import UIKit
 
 class CustomTableViewCell : UITableViewCell {
     
-    private var user:User?
+    fileprivate var user:User?
     
     @IBOutlet var firstname:UILabel!
     @IBOutlet var lastname:UILabel!
@@ -28,7 +28,7 @@ class CustomTableViewCell : UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
     
-    func setUser(user:User) {
+    func setUser(_ user:User) {
         self.user = user
         
         self.firstname?.text = user.firstname
