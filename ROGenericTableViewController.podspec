@@ -17,5 +17,5 @@ Pod::Spec.new do |spec|
     spec.source       = { :git => 'https://gitlab.com/rascor-apps/ROGenericTableViewController.git', :tag => "2.1.0" }
     spec.source_files = 'Source/**/*'
     spec.framework    = 'SystemConfiguration'
-    spec.ios.deployment_target  = '9.3'
+    spec.ios.deployment_target  = '8.4'
 end
